@@ -36,17 +36,80 @@
     animation: fadeIn 1s ease-in forwards;
 }
 
+
+li {
+  list-style: none;
+}
+
 #charaDetail{padding-bottom:0}
 
-.headline{width:100%;position:relative}
-.headline__inner{width:1300px;margin:0 auto;height:14px;position:absolute;border-bottom:#fff solid 2px;z-index: 0}
-.headline__name{font-size:118px;line-height:1em;color:#fff;font-family:hind vadodara,notosans-bold,sans-serif;font-weight:700;letter-spacing:-.02em;position:absolute;left:0;top:-22px;z-index:0}
-.headline__specs{position:absolute;right:0;bottom:0px;z-index:0;letter-spacing:0;font-size:0}
-.headline__specs__kanji{letter-spacing:normal;font-size:20px;display:inline-block;color:#fff;font-family:"Microsoft YaHei Light",sans-serif;font-weight:700;letter-spacing:.05em;-webkit-font-smoothing:antialiased}
-.headline.size__95 .headline__name{font-size:95px;margin-top:-71px;}
+.headline{
+  width:100%;
+  position:relative
+}
 
-.details{width:100%;position:relative;z-index:0;margin-top:0}
-.details__inner{width:100%;margin:0 auto;padding-bottom:75px;padding-bottom:20vw;background:0 0;zoom:1;position:relative}
+.headline__inner{
+  width:1300px;
+  margin:0 auto;
+  height:14px;
+  position:absolute;
+  border-bottom:#fff solid 2px;
+  z-index: 0
+}
+
+.headline__name{
+  font-size:118px;
+  line-height:1em;color:#fff;
+  font-family:hind vadodara,notosans-bold,sans-serif;
+  font-weight:700;
+  letter-spacing:-.02em;
+  position:absolute;
+  left:0;
+  top:-22px;
+  z-index:0
+}
+
+.headline__specs{
+  position:absolute;
+  right:0;
+  bottom:0px;
+  z-index:0;
+  letter-spacing:0;
+  font-size:0
+}
+
+.headline__specs__kanji{
+  letter-spacing:normal;
+  font-size:20px;
+  display:inline-block;
+  color:#fff;
+  font-family:"Microsoft YaHei Light",sans-serif;
+  font-weight:700;
+  letter-spacing:.05em;
+  -webkit-font-smoothing:antialiased
+}
+
+.headline.size__95 .headline__name{
+  font-size:95px;
+  margin-top:-71px;
+}
+
+.details{
+  width:100%;
+  position:relative;
+  z-index:0;
+  margin-top:0
+}
+
+.details__inner{
+  width:100%;
+  margin:0 auto;
+  padding-bottom:75px;
+  padding-bottom:20vw;
+  background:0 0;
+  zoom:1;
+  position:relative
+}
 
 .btnToru {
   margin-top: -15px;
@@ -58,6 +121,7 @@
   background-size: contain;
   z-index:10000;
   position: absolute;
+  cursor: pointer;
   }
 
 .toruimg{
@@ -91,6 +155,7 @@
   background-size: contain;
   z-index:10000;
   position: absolute;
+  cursor: pointer;
   }
 
 .dionimg{
@@ -478,3 +543,161 @@
 }
 /*# sourceMappingURL=Untitled-1.css.map */
 
+/*
+ *  Lightbox
+*/
+.main-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(49, 49, 49, 0.65);
+  z-index: 2000000;
+}
+
+
+h3 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #313131;
+  font-size: 24px;
+}
+
+h4 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: 40px;
+  color: rgba(49, 49, 49, 0.7);
+}
+
+p.author {
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  color: rgba(49, 49, 49, 0.5);
+}
+.main-overlay .overlay-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-overlay .overlay-details {
+  position: absolute;
+  display: block;
+  z-index: 2000000;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 800px;
+  max-height: 680px;
+  padding: 40px;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px 2px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+}
+.main-overlay .overlay-image {
+  display: inline-block;
+  margin-right: 30px;
+  max-width: 275px;
+  vertical-align: top;
+}
+.main-overlay .overlay-image img {
+  position: relative;
+  display: inline-block;
+  z-index: 2000000;
+  box-shadow: -12px 12px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.main-overlay .overlay-image .back-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 275px;
+  height: 100%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: green;
+}
+.main-overlay .close-overlay-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
+  text-indent: -9999px;
+  transition: opacity 250ms ease-out;
+}
+.main-overlay .close-overlay-btn:hover {
+  opacity: 1;
+}
+.main-overlay .close-overlay-btn:before {
+  content: " ";
+  position: absolute;
+  left: 15px;
+  width: 2px;
+  height: 33px;
+  background-color: #313131;
+}
+.main-overlay .close-overlay-btn:after {
+  content: " ";
+  position: absolute;
+  left: 15px;
+  width: 2px;
+  height: 33px;
+  background-color: #313131;
+}
+.main-overlay .close-overlay-btn:before {
+  transform: rotate(45deg);
+}
+.main-overlay .close-overlay-btn:after {
+  transform: rotate(-45deg);
+}
+
+.main-overlay .overlay-desc {
+  display: inline-block;
+  margin-top: -400px;
+  width: calc(100% - 320px);
+  vertical-align: top;
+  transition: all 500ms ease-out;
+}
+.main-overlay .overlay-desc.activated {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.main-overlay .preview-content {
+  padding-right: 24px;
+  padding-top: 10px;
+  display: block;
+  display: -webkit-box;
+  height: 400px;
+  /* Fallback for non-webkit */
+  font-size: 20px;
+  line-height: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: scroll;
+  text-overflow: clip;
+  font-weight: 400;
+}
+.main-overlay .preview-content h5 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+.main-overlay .preview-content p {
+  font-family: "Microsoft YaHei", 微软雅黑, serif;
+  font-weight: lighter;
+}
+.overlay-details {
+  display: none;
+}

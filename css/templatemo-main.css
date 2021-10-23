@@ -26,10 +26,6 @@ body::after{
   content:url(../img/1st-section-mono.jpg) url(../img/1st-section.jpg) url(../img/A6.png) url(../img/B6.png);
 }
 
-a { color: #3CC; }
-
-a:hover { color: #FF0; }
-
 /*----------
   NAV
 ----------*/
@@ -274,21 +270,15 @@ section {
 }
 
 .tabs a:hover {
-  color: #ff7d27;
+  color: #492e06;
 }
 
 .tabs .active {
-  border:4px solid #ff7d27;
+  border:4px solid #492e06;
 }
 
 .tabgroup div  {
 
-}
-
-.tabgroup p {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 25px;
 }
 
 .clearfix:after {

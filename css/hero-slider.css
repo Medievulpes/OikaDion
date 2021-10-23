@@ -11,6 +11,16 @@ Primary style
 
 html {
   font-size: 62.5%;
+  cursor: url('../img/sgf1.png'), auto;
+  animation: cursor 1s linear infinite;
+}
+@keyframes cursor{
+  0% { 
+      cursor: url('../img/sgf1.png'), auto;
+  }
+  100% { 
+      cursor: url('../img/sgf2.png'), auto;
+  }
 }
 
 body {
