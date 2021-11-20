@@ -203,7 +203,37 @@ body::after{
   background-position: center center;
 }
 
+.info-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15vh;
+  background-image: url(../img/4th-section.jpg);
+  background-attachment: fixed;
+  min-height: 50vh;
+  background-size: cover;
+  background-position: center center;
+}
 
+.info-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.info-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.info-image:hover {
+  transform: scale(1.15);
+}
 
 .owl-pagination {
   margin-top: 40px;
@@ -229,7 +259,7 @@ body::after{
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 8vh;
-  background-image: url(../img/4th-section.jpg);
+  background-image: url(../img/5th-section.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -292,7 +322,11 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 16vh;
-  background-image: url(../img/5th-section.jpg);
+  background-image: url(../img/6th-section.jpg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
 }
 
 HTML CSS JSResult Skip Results Iframe

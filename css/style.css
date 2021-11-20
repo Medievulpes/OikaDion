@@ -128,7 +128,7 @@ li {
     margin-top: -180px;
     margin-left: -100px;
     background-image: url(../img/B5.png);
-    background-size: 800px;
+    background-size: contain;
     background-repeat: no-repeat;
     min-height: 1000px;
     z-index: 1000;
@@ -139,7 +139,7 @@ li {
   margin-top: -180px;
   margin-left: -100px;
   background-image: url(../img/B6.png);
-  background-size: 800px;
+  background-size: contain;
   background-repeat: no-repeat;
   min-height: 1000px;
   z-index: 1000;
@@ -162,7 +162,7 @@ li {
     margin-top: -180px;
     margin-left: -100px;
     background-image: url(../img/A5.png);
-    background-size: 800px;
+    background-size: contain;
     background-repeat: no-repeat;
     min-height: 1000px;
     z-index: 1000;
@@ -172,7 +172,7 @@ li {
   margin-top: -180px;
   margin-left: -100px;
   background-image: url(../img/A6.png);
-  background-size: 800px;
+  background-size: contain;
   background-repeat: no-repeat;
   min-height: 1000px;
   z-index: 1000;
