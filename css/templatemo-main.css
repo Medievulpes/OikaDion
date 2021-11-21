@@ -124,7 +124,7 @@ body::after{
 
 .primary-button a {
   display: inline-block;
-  background-color: #ff7d27;
+  background-color: #771616;
   padding: 15px 24px;
   border-radius: 3px;
   text-transform: uppercase;
@@ -172,7 +172,7 @@ body::after{
   color: #fff;
 }
 
-.service-content {
+.toru-content {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
@@ -183,16 +183,8 @@ body::after{
   background-position: center center;
 }
 
-.service-content .left-text {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 25px 10px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 30px;
-}
 
-
-.projects-content {
+.dion-content {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
@@ -254,8 +246,7 @@ body::after{
   background: #fff;
 }
 
-
-.tabs-content {
+.story-content {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 8vh;
@@ -317,7 +308,6 @@ section {
   clear:both;
 }
 
-
 .contact-content {
   padding-left: 15px;
   padding-right: 15px;
@@ -357,6 +347,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 .contact-content .container {
   max-width: 100rem;
   margin: 0 auto;
+  padding-bottom: 20em;
 }
 
 
@@ -365,6 +356,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
   flex-wrap: wrap;
   /* Compensate for excess margin on outer gallery flex items */
   margin: -1rem -1rem;
+
 }
 
 .gallery-item {
@@ -438,7 +430,7 @@ footer ul li a {
   line-height: 40px;
   text-align: center;
   display: inline-block;
-  background-color: #ff7d27;
+  background-color: #771616;
   color: #282b2f;
   border-radius: 50%;
   text-decoration: none;
@@ -448,7 +440,7 @@ footer ul li a {
 
 footer ul li a:hover {
   color: #282b2f;
-  background-color: #ff8e43;
+  background-color: #771616;
 }
 
 footer p {
@@ -461,7 +453,7 @@ footer p {
 }
 
 footer em {
-  color: #ff8e43;
+  color: #771616;
   font-weight: 600;
   font-style: normal;
 }
@@ -485,30 +477,6 @@ footer em {
 
   .baner-content .primary-button {
     margin-top: 15px;
-  }
-
-  .service-content {
-    padding-top: 5vh;
-    text-align: center;
-  }
-
-  .service-content .left-text .line-dec {
-    width: 45px;
-    height: 3px;
-    background-color: #ff7d27;
-    margin: 20px auto 20px auto;
-  }
-
-  .service-content .left-text ul {
-    text-align: left;
-  }
-
-  .service-content .service-item {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 25px 30px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 30px;
   }
 
 }
