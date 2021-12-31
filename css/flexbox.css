@@ -207,7 +207,7 @@
 }
 .a-more:hover {
   transform: scale(1.2, 1.2);
-  color: #27ddd4;
+  color: #696969;
 }
 
 .o-card.isOpen .o-card_subTitle, .o-card.isOpen .o-card_paragraph {
@@ -316,7 +316,7 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 1px 1px 0px #07526e;
+  text-shadow: 1px 1px 0px #696969;
   padding: 15px 0;
   margin-left: auto;
   margin-right: auto;
@@ -325,13 +325,13 @@
   cursor: pointer;
   z-index: 3;
   border: none;
-  background: #1daca4;
-  box-shadow: inset 0px 1px 0px #1daca4, 0px 1px 0px 0px #07526e, 0px 4px 6px rgba(0, 0, 0, 0.2);
+  background: #afafaf;
+  box-shadow: inset 0px 1px 0px #afafaf, 0px 1px 0px 0px #696969, 0px 4px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
 }
 .item-details .button:hover, .item-details .button:active {
   top: 0;
-  box-shadow: inset 0px 1px 0px #1daca4, 0px 2px 0px 0px #07526e, 0px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #afafaf, 0px 2px 0px 0px #696969, 0px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 @font-face {
