@@ -198,10 +198,10 @@ body::after{
 .info-content {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 15vh;
+  padding-top: 5vh;
   background-image: url(../img/4th-section.jpg);
   background-attachment: fixed;
-  min-height: 50vh;
+  min-height: 55vh;
   background-size: cover;
   background-position: center center;
 }
@@ -249,7 +249,7 @@ body::after{
 .story-content {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 8vh;
+  padding-top: 5vh;
   background-image: url(../img/5th-section.jpg);
   background-attachment: fixed;
   min-height: 100vh;
