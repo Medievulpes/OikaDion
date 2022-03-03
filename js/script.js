@@ -119,11 +119,18 @@ $(document).ready(function(){
   });
 });
 
-function openCity(cityName) {
-  var i;
-  var x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  document.getElementById(cityName).style.display = "block";  
-}
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const square = entry.target.querySelector('.right-text');
+
+    if (entry.isIntersecting) {
+      square.classList.add('right-text-animation');
+	  return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove('right-text-animation');
+  });
+});
+
+observer.observe(document.querySelector('.about-content'));
