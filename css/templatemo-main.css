@@ -172,6 +172,11 @@ body::after{
   color: #fff;
 }
 
+section {
+  background-color: transparent;
+  padding-bottom: 15px;
+}
+
 .toru-content {
   padding-left: 15px;
   padding-right: 15px;
@@ -182,7 +187,6 @@ body::after{
   background-size: cover;
   background-position: center center;
 }
-
 
 .dion-content {
   padding-left: 15px;
@@ -195,55 +199,60 @@ body::after{
   background-position: center center;
 }
 
-.info-content {
+.about-content {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 5vh;
+  padding-top: 10vh;
   background-image: url(../img/4th-section.jpg);
   background-attachment: fixed;
-  min-height: 55vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center center;
 }
 
-.info-item {
-  /* Minimum width of 24rem and grow to fit available space */
-  flex: 1 0 24rem;
-  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-  margin: 1rem;
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  overflow: hidden;
+@media (prefers-reduced-motion: no-preference) {
+  .right-text-animation {
+    animation: slide-in-anim 1s ease;
+  }
 }
 
-.info-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 400ms ease-out;
+@keyframes slide-in-anim {
+	0% {
+		transform: translateY(10vh);
+  }
+	100% {
+		transform: translateY(0);
+	}  
 }
 
-.info-image:hover {
-  transform: scale(1.15);
+.about-content .right-text h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
 }
 
-.owl-pagination {
-  margin-top: 40px;
-  opacity: 1;
-  display: inline-block;
+.about-content .right-text .line-dec {
+  width: 31%;
+  height: 3px;
+  background-color: #ff7d27;
+  margin: 20px 0px 20px 0px;
 }
 
-.owl-page span {
-  display: block;
-  width: 14px;
-  height: 14px;
-  margin: 0px 5px;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  background: #fff;
+.about-content .right-text p {
+  font-weight: 600;
+  color: #fff;
+}
+
+.about-content .right-text ul {
+  padding: 0;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.about-content .right-text ul li {
+  text-align: center;
+  margin: 15px 0px;
+  color: #fff;
 }
 
 .story-content {
@@ -255,11 +264,6 @@ body::after{
   min-height: 100vh;
   background-size: cover;
   background-position: center center;
-}
-
-section {
-  background-color: transparent;
-  padding-bottom: 15px;
 }
 
 .wrapper {
@@ -308,17 +312,6 @@ section {
   clear:both;
 }
 
-.contact-content {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 16vh;
-  background-image: url(../img/6th-section.jpg);
-  background-attachment: fixed;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center center;
-}
-
 HTML CSS JSResult Skip Results Iframe
 /*
 
@@ -343,23 +336,18 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
   box-sizing: border-box;
 }
 
-
-.contact-content .container {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding-bottom: 20em;
+.album-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15vh;
+  background-image: url(../img/6th-section.jpg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
 }
 
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  /* Compensate for excess margin on outer gallery flex items */
-  margin: -1rem -1rem;
-
-}
-
-.gallery-item {
+.info-item {
   /* Minimum width of 24rem and grow to fit available space */
   flex: 1 0 24rem;
   /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
@@ -368,7 +356,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
   overflow: hidden;
 }
 
-.gallery-image {
+.info-image {
   display: block;
   width: 100%;
   height: 100%;
@@ -376,37 +364,38 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
   transition: transform 400ms ease-out;
 }
 
-.gallery-image:hover {
+.info-image:hover {
   transform: scale(1.15);
 }
 
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
-
-@supports (display: grid) {
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-gap: 2rem;
-  }
-
-  .gallery,
-  .gallery-item {
-    margin: 0;
-  }
+.owl-pagination {
+  margin-top: 40px;
+  opacity: 1;
+  display: inline-block;
 }
 
-
+.owl-page span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 0px 5px;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #fff;
+}
 
 footer {
   text-align: center;
-  background-color: #282b2f;
-  padding: 70px 0px;
+  background-image: url(../img/footer.jpg);
+  padding: 250px 0px;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 footer .primary-button {
