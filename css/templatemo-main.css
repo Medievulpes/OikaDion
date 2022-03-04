@@ -135,6 +135,10 @@ body::after{
   letter-spacing: 0.5px;
 }
 
+.primary-button a:hover{
+  background-color: #771616c4;
+}
+
 .parallax-content {
   width: 100%;
   min-height: 100vh;
@@ -391,7 +395,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 footer {
   text-align: center;
   background-image: url(../img/footer.jpg);
-  padding: 250px 0px;
+  padding: 250px 0px 150px 0px;
   background-attachment: fixed;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -411,26 +415,38 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  margin: 0px 4px;
+  margin: 10px 10px;
 }
 
 footer ul li a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 50px;
+  height: 64px;
   text-align: center;
   display: inline-block;
-  background-color: #771616;
-  color: #282b2f;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: all 0.5s;
-  font-size: 17px;
 }
 
-footer ul li a:hover {
-  color: #282b2f;
-  background-color: #771616;
+.chibiT {
+  background-image: url(../img/chibi_T0.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.chibiT a:hover {
+  background-image: url(../img/chibi_T1.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.chibiD {
+  background-image: url(../img/chibi_D0.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.chibiD a:hover {
+  background-image: url(../img/chibi_D1.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 footer p {
