@@ -135,6 +135,10 @@ body::after{
   letter-spacing: 0.5px;
 }
 
+.primary-button a:hover{
+  background-color: #771616c4;
+}
+
 .parallax-content {
   width: 100%;
   min-height: 100vh;
@@ -172,6 +176,11 @@ body::after{
   color: #fff;
 }
 
+section {
+  background-color: transparent;
+  padding-bottom: 15px;
+}
+
 .toru-content {
   padding-left: 15px;
   padding-right: 15px;
@@ -182,7 +191,6 @@ body::after{
   background-size: cover;
   background-position: center center;
 }
-
 
 .dion-content {
   padding-left: 15px;
@@ -195,13 +203,151 @@ body::after{
   background-position: center center;
 }
 
-.info-content {
+.about-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10vh;
+  background-image: url(../img/4th-section.jpg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .right-text-animation {
+    animation: slide-in-anim 1s ease;
+  }
+}
+
+@keyframes slide-in-anim {
+	0% {
+		transform: translateY(10vh);
+  }
+	100% {
+		transform: translateY(0);
+	}  
+}
+
+.about-content .right-text h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.about-content .right-text .line-dec {
+  width: 31%;
+  height: 3px;
+  background-color: #ff7d27;
+  margin: 20px 0px 20px 0px;
+}
+
+.about-content .right-text p {
+  font-weight: 600;
+  color: #fff;
+}
+
+.about-content .right-text ul {
+  padding: 0;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.about-content .right-text ul li {
+  text-align: center;
+  margin: 15px 0px;
+  color: #fff;
+}
+
+.story-content {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5vh;
-  background-image: url(../img/4th-section.jpg);
+  background-image: url(../img/5th-section.jpg);
   background-attachment: fixed;
-  min-height: 55vh;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.tabs {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tabs li {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.tabs a {
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  color:#fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding:10px 15px;
+  border:4px solid #fff;
+  min-width: 150px;
+}
+
+.tabs a:hover {
+  color: #ffe3b8;
+}
+
+.tabs .active {
+  border:4px solid #ffe3b8;
+}
+
+.tabgroup div  {
+
+}
+
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+HTML CSS JSResult Skip Results Iframe
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+  /* Base font size */
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.album-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15vh;
+  background-image: url(../img/6th-section.jpg);
+  background-attachment: fixed;
+  min-height: 100vh;
   background-size: cover;
   background-position: center center;
 }
@@ -246,167 +392,15 @@ body::after{
   background: #fff;
 }
 
-.story-content {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5vh;
-  background-image: url(../img/5th-section.jpg);
-  background-attachment: fixed;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center center;
-}
-
-section {
-  background-color: transparent;
-  padding-bottom: 15px;
-}
-
-.wrapper {
-  text-align: center;
-}
-
-.tabs {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.tabs li {
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
-}
-
-.tabs a {
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  text-transform:uppercase;
-  color:#fff;
-  font-size: 14px;
-  font-weight: 700;
-  padding:10px 15px;
-  border:4px solid #fff;
-}
-
-.tabs a:hover {
-  color: #492e06;
-}
-
-.tabs .active {
-  border:4px solid #492e06;
-}
-
-.tabgroup div  {
-
-}
-
-.clearfix:after {
-  content:"";
-  display:table;
-  clear:both;
-}
-
-.contact-content {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 16vh;
-  background-image: url(../img/6th-section.jpg);
-  background-attachment: fixed;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center center;
-}
-
-HTML CSS JSResult Skip Results Iframe
-/*
-
-All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
-        
-The 'supports' rule will only run if your browser supports CSS grid.
-
-Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
-
-*/
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
-
-:root {
-  /* Base font size */
-  font-size: 10px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
-.contact-content .container {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding-bottom: 20em;
-}
-
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  /* Compensate for excess margin on outer gallery flex items */
-  margin: -1rem -1rem;
-
-}
-
-.gallery-item {
-  /* Minimum width of 24rem and grow to fit available space */
-  flex: 1 0 24rem;
-  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-  margin: 1rem;
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-}
-
-.gallery-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 400ms ease-out;
-}
-
-.gallery-image:hover {
-  transform: scale(1.15);
-}
-
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
-
-@supports (display: grid) {
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-gap: 2rem;
-  }
-
-  .gallery,
-  .gallery-item {
-    margin: 0;
-  }
-}
-
-
-
 footer {
   text-align: center;
-  background-color: #282b2f;
-  padding: 70px 0px;
+  background-image: url(../img/footer.jpg);
+  padding: 250px 0px 150px 0px;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 footer .primary-button {
@@ -421,26 +415,38 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  margin: 0px 4px;
+  margin: 10px 10px;
 }
 
 footer ul li a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 50px;
+  height: 64px;
   text-align: center;
   display: inline-block;
-  background-color: #771616;
-  color: #282b2f;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: all 0.5s;
-  font-size: 17px;
 }
 
-footer ul li a:hover {
-  color: #282b2f;
-  background-color: #771616;
+.chibiT {
+  background-image: url(../img/chibi_T0.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.chibiT a:hover {
+  background-image: url(../img/chibi_T1.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.chibiD {
+  background-image: url(../img/chibi_D0.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.chibiD a:hover {
+  background-image: url(../img/chibi_D1.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 footer p {
