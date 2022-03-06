@@ -47,6 +47,13 @@ https://templatemo.com/tm-526-vanilla
       <li class="nav-item"><a class="nav-link" href="#album"><span>Album</span></a></li>
     </ul>
   </div>
+  <div class="player">
+    <audio id="audioFile" preload="auto">
+      <source type="audio/m4a" />
+    </audio>
+    <a class='musicOff' href="#!"><img src="img/ad1.gif" id="myImg"></a>
+  </div>
+  </div>
   <!--版头-->
   <div class="parallax-content baner-content" id="home">
     <div class="container">
@@ -452,6 +459,7 @@ https://templatemo.com/tm-526-vanilla
                 <div class="overlay-full"></div>
               </div>
             </div>
+
           </div>
 
           <div id="tab2">
@@ -875,6 +883,36 @@ https://templatemo.com/tm-526-vanilla
   <script src="js/main.js"></script>
   <script src="js/flexbox.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    var playlist = Array("audio/ELEVATION.aac", "audio/FadedPhotograph.aac", "audio/TRISING!.aac");
+    var randomSong = playlist[Math.floor(Math.random() * playlist.length)];
+    var audioElement = document.getElementById('audioFile');
+    audioElement.setAttribute('src', randomSong);</script>
+  <script type="text/javascript">
+    function changeImg() {
+      var image = document.getElementById('myImg');
+      if (image.src.match("img/ad2.gif")) {
+        image.src = "img/ad1.gif";
+      }
+      else {
+        image.src = "img/ad2.gif";
+      }
+    }
+    $(document).ready(function () {
+      $(".musicOff").click(function () {
+        var image = document.getElementById('myImg');
+        var x = document.getElementById("audioFile");
+        x.play();
+        if (image.src.match("img/ad1.gif")) {
+          image.src = "img/ad2.gif";
+        }
+        else {
+          image.src = "img/ad1.gif";
+          x.pause();
+        }
+      });
+    });
+  </script>
   <script>
     $(function () {
       $("#Content1-1").load("doc/doc1-1.html");

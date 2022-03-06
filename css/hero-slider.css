@@ -367,6 +367,9 @@ Single slide style
   .cd-hero-slider .cd-btn {
     font-size: 1.4rem;
   }
+  .cd-hero-slider p {
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (min-width: 1170px) {
   .cd-hero-slider .cd-full-width,
