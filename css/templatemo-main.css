@@ -125,7 +125,7 @@ body::after{
 .player {
   width: 20%;
   display: inline-block;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   z-index: 99999;
