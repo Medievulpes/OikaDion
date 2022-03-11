@@ -614,6 +614,7 @@ p.author {
   position: relative;
   display: inline-block;
   z-index: 2000000;
+  background-color: #313131a6;
   box-shadow: -12px 12px 15px -5px rgba(0, 0, 0, 0.3);
 }
 .main-overlay .overlay-image .back-color {
