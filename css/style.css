@@ -681,6 +681,7 @@ p.author {
   display: block;
   display: -webkit-box;
   height: 400px;
+  min-width: 400px;
   /* Fallback for non-webkit */
   font-size: 20px;
   line-height: 1;
