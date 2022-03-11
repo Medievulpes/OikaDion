@@ -312,7 +312,8 @@ li {
   line-height: 1.2;
 }
 
-.copycard1 {
+.copycard1,
+.copycard2 {
   font-family: "Microsoft YaHei";
   font-size: 12px;
   line-height: 1.65;
@@ -478,13 +479,6 @@ li {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.2;
-}
-
-.copycard2 {
-  font-family: "Microsoft YaHei";
-  font-size: 0.1rem;
-  line-height: 1.65;
-  margin:3em;
 }
 
 @media (hover: hover) and (min-width: 600px) {
