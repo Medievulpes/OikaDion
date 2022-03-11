@@ -314,9 +314,9 @@ li {
 
 .copycard1 {
   font-family: "Microsoft YaHei";
-  font-size: 0.1em;
+  font-size: 12px;
   line-height: 1.65;
-  margin:3em;
+  margin: 0.3em;
 }
 
 @media (hover: hover) and (min-width: 600px) {
