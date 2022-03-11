@@ -594,7 +594,7 @@ p.author {
   z-index: 2000000;
   top: 50%;
   left: 50%;
-  width: 100%-1px;
+  width: 99%;
   max-width: 800px;
   min-width: 400px;
   max-height: 680px;
