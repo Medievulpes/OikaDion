@@ -138,7 +138,9 @@ body::after{
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 11px;
-  color: #ffffff;
+  background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+  color: hsl(230, 100%, 95%);
+  opacity: 70%;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.5px;
@@ -146,8 +148,7 @@ body::after{
 }
 
 .primary-button a:hover{
-  background: #913434;
-  color: #050801;
+  opacity: 100%;
 }
 
 .parallax-content {
@@ -420,6 +421,60 @@ footer .primary-button {
   display: inline-block;
   overflow: hidden;
 }
+footer .primary-button h2 {
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: 300;
+    animation: lights 5s 750ms linear infinite;
+}
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
 
 footer ul {
   padding: 0px;
@@ -447,8 +502,6 @@ footer ul li a {
 
 .chibiT a:hover {
   background-image: url(../img/chibi_T1.PNG);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .chibiD {
@@ -459,81 +512,6 @@ footer ul li a {
 
 .chibiD a:hover {
   background-image: url(../img/chibi_D1.PNG);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#glow a span{
-  position: absolute;
-  display: block;
-}
-#glow a span:nth-child(1){
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg,transparent,#f16969);
-  animation: animate1 1s linear infinite;
-}
-@keyframes animate1{
-  0%{
-      left: -100%;
-  }
-  50%,100%{
-      left: 100%;
-  }
-}
-#glow a span:nth-child(2){
-  top: -100%;
-  right: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg,transparent,#f16969);
-  animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
-}
-@keyframes animate2{
-  0%{
-      top: -100%;
-  }
-  50%,100%{
-      top: 100%;
-  }
-}
-#glow a span:nth-child(3){
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(270deg,transparent,#f16969);
-  animation: animate3 1s linear infinite;
-  animation-delay: 0.50s;
-}
-@keyframes animate3{
-  0%{
-      right: -100%;
-  }
-  50%,100%{
-      right: 100%;
-  }
-}
-
-#glow a span:nth-child(4){
-  bottom: -100%;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(360deg,transparent,#f16969);
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
-}
-@keyframes animate4{
-  0%{
-      bottom: -100%;
-  }
-  50%,100%{
-      bottom: 100%;
-  }
 }
 
 footer p {
