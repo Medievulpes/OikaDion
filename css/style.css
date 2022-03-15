@@ -90,8 +90,14 @@ li {
 }
 
 .headline.size__95 .headline__name{
-  font-size:95px;
+  font-size: 95px;
   margin-top:-71px;
+}
+
+@media only screen and (max-width: 768px) {
+  .headline.size__95 .headline__name{
+    font-size: 75px;
+  }
 }
 
 .details{
@@ -133,12 +139,22 @@ li {
   margin-left: -100px;
   background-size: contain;
   background-repeat: no-repeat;
-  min-height: 1000px;
+  min-height: 100rem;
   z-index: 1000;
 }
 
+@media only screen and (max-width: 768px) {
+  .toruimg,
+  .toruimgwoglass,
+  .dionimg,
+  .dionimgwoglass {
+    min-height: 60vh;
+  }
+}
+
+
 .toruimg {
-    background-image: url(../img/B5.png);
+  background-image: url(../img/B5.png);
  }
 
  .toruimgwoglass {
@@ -152,6 +168,7 @@ li {
 .dionimgwoglass {
   background-image: url(../img/A6.png);
 }
+
 
 
 @import url("https://fonts.googleapis.com/css?family=card1o:400i|Rubik:400,700&display=swap");

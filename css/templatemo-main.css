@@ -320,7 +320,6 @@ section {
 }
 
 .tabgroup div  {
-
 }
 
 .clearfix:after {
@@ -548,6 +547,15 @@ footer em {
 
   .baner-content .primary-button {
     margin-top: 15px;
+  }
+
+  .toru-content,
+  .dion-content,
+  .about-content,
+  .story-content,
+  .album-content,
+  footer {
+    background-attachment: scroll;
   }
 
 }
