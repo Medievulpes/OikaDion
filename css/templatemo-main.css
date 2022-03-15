@@ -532,21 +532,15 @@ footer em {
   
   .baner-content {
     padding-top: 30vh;
+    background-position-x: -230vw;
   }
 
   .baner-content h1 {
     font-size: 64px;
   }
 
-  .baner-content em {
-  }
-
   .baner-content span {
     font-size: 24px;
-  }
-
-  .baner-content .primary-button {
-    margin-top: 15px;
   }
 
   .toru-content,
