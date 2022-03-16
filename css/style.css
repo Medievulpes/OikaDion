@@ -143,16 +143,23 @@ li {
   z-index: 1000;
 }
 
+@media only screen and (max-width: 1200px) {
+  .toruimg,
+  .toruimgwoglass,
+  .dionimg,
+  .dionimgwoglass {
+    background-size: cover;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .toruimg,
   .toruimgwoglass,
   .dionimg,
   .dionimgwoglass {
-    min-height: 60vh;
+    min-height:60rem;
   }
 }
-
-
 .toruimg {
   background-image: url(../img/B5.png);
  }
@@ -190,10 +197,10 @@ li {
   font-family: var(--font-sans);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
     .page-content {
-      -ms-grid-columns: (1fr)[2];
-          grid-template-columns: repeat(2, 1fr);
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
 }
   
@@ -233,7 +240,7 @@ li {
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
   .card1,
   .card2 {
     height: 300px;
