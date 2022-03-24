@@ -312,7 +312,7 @@
   font-family: Arial, "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color: #3C204C;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -324,8 +324,7 @@
   cursor: pointer;
   z-index: 3;
   border: none;
-  background: linear-gradient(#4F537E,#684C77);
-  box-shadow: inset 0px 1px 0px #659BB3, 0px 1px 0px 0px #83B4D5, 0px 4px 6px rgba(0, 0, 0, 0.2);
+  background: #f1f1f1;
   transition: all 0.5s;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -348,7 +347,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(#659BB3,#83B4D5);
+  background: #634a72;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -361,7 +360,7 @@
   transition-timing-function: ease-out;
 }
 .item-details .button:hover, .item-details .button:focus, .item-details .button:active {
-  color: #3C204C;
+  color: #fff;
   top: 0;
   box-shadow: none;
 }
