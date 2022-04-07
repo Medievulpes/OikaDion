@@ -597,26 +597,6 @@ footer ul li a {
   display: inline-block;
 }
 
-.chibiT {
-  background-image: url(../img/chibi_T0.PNG);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.chibiT a:hover {
-  background-image: url(../img/chibi_T1.PNG);
-}
-
-.chibiD {
-  background-image: url(../img/chibi_D0.PNG);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.chibiD a:hover {
-  background-image: url(../img/chibi_D1.PNG);
-}
-
 footer p {
   font-size: 12px;
   color: #fff;
