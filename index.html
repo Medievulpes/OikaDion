@@ -16,16 +16,6 @@
   <link rel="stylesheet" href="css/owl-carousel.css">
   <link rel="stylesheet" href="css/flexbox.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" as=image href="img/sgf1.png">
-  <link rel="preload" as=image href="img/sgf2.png">
-  <link rel="preload" as=image href="img/1st-section.jpg">
-  <link rel="preload" as=image href="img/1st-section-mono.jpg">
-  <link rel="preload" as=image href="img/2nd-section.jpg">
-  <link rel="preload" as=image href="img/A5.png">
-  <link rel="preload" as=image href="img/A6.png">
-  <link rel="preload" as=image href="img/3rd-section.jpg">
-  <link rel="preload" as=image href="img/B5.png">
-  <link rel="preload" as=image href="img/B6.png">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
@@ -38,6 +28,10 @@ https://templatemo.com/tm-526-vanilla
 
 
 <body>
+  <div id="loading">
+    <img id="loading-image" src="img/load.gif" alt="Loading..." />
+  </div>
+
   <div class="fixed-side-navbar">
     <ul class="nav flex-column">
       <li class="nav-item"><a class="nav-link" href="#home"><span>Intro</span></a></li>
@@ -995,90 +989,8 @@ https://templatemo.com/tm-526-vanilla
   <script src="js/main.js"></script>
   <script src="js/flexbox.js"></script>
   <script src="js/script.js"></script>
-  <script>
-    function rotateCard(btn) {
-      var $card = $(btn).closest('.o-card_container');
-      console.log($card);
-      if ($card.hasClass('hover')) {
-        $card.removeClass('hover');
-      } else {
-        $card.addClass('hover');
-      }
-    }
-  </script>
-  <script>
-    var playlist = Array("audio/ELEVATION.aac", "audio/FadedPhotograph.aac", "audio/TRISING!.aac");
-    var randomSong = playlist[Math.floor(Math.random() * playlist.length)];
-    var audioElement = document.getElementById('audioFile');
-    audioElement.setAttribute('src', randomSong);</script>
-  <script type="text/javascript">
-    function changeImg() {
-      var image = document.getElementById('myImg');
-      if (image.src.match("img/ad2.gif")) {
-        image.src = "img/ad1.gif";
-      }
-      else {
-        image.src = "img/ad2.gif";
-      }
-    }
-    $(document).ready(function () {
-      $(".musicOff").click(function () {
-        var image = document.getElementById('myImg');
-        var x = document.getElementById("audioFile");
-        x.play();
-        if (image.src.match("img/ad1.gif")) {
-          image.src = "img/ad2.gif";
-        }
-        else {
-          image.src = "img/ad1.gif";
-          x.pause();
-        }
-      });
-    });
-  </script>
   <script type="text/javascript"
     src="https://assets.website-files.com/5e2755779d8b8ea1d6373797/5ea88e92dce9b4b66f165490_zoom.txt"></script>
-  <script>
-    jQuery(function () {
-
-      if (!$.fn.imagezoomsl) {
-
-        $('.msg').show();
-        return;
-      }
-      else $('.msg').hide();
-
-      // plugin initialization
-      $('.info-image').imagezoomsl({
-
-        innerzoommagnifier: true,
-        classmagnifier: "round-loope",
-        magnifiersize: [150, 150],
-        // disables the scrolling of the document with the mouse wheel when the cursor is over the image
-        disablewheel: false
-      });
-    });
-  </script>
-  <script>
-    $(function () {
-      $("#Content1-1").load("doc/doc1-1.html");
-      $("#Content1-2").load("doc/doc1-2.html");
-      $("#Content1-3").load("doc/doc1-3.html");
-      $("#Content1-4").load("doc/doc1-4.html");
-      $("#Content1-5").load("doc/doc1-5.html");
-      $("#Content1-6").load("doc/doc1-6.html");
-      $("#Content2-0").load("doc/doc2-0.html");
-      $("#Content2-1").load("doc/doc2-1.html");
-      $("#Content2-2").load("doc/doc2-2.html");
-      $("#Content2-3").load("doc/doc2-3.html");
-      $("#Content2-4").load("doc/doc2-4.html");
-      $("#Content2-5").load("doc/doc2-5.html");
-      $("#Content2-6").load("doc/doc2-6.html");
-      $("#Content3-1").load("doc/doc3-1.html");
-      $("#Content3-2").load("doc/doc3-2.html");
-      $("#Content3-3").load("doc/doc3-3.html");
-    });
-  </script>
 </body>
 
 

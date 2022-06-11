@@ -60,3 +60,57 @@ jQuery(document).ready(function ($) {
 
 
 });
+
+jQuery(function () {
+
+  if (!$.fn.imagezoomsl) {
+
+    $('.msg').show();
+    return;
+  }
+  else $('.msg').hide();
+
+  // plugin initialization
+  $('.info-image').imagezoomsl({
+
+    innerzoommagnifier: true,
+    classmagnifier: "round-loope",
+    magnifiersize: [150, 150],
+    // disables the scrolling of the document with the mouse wheel when the cursor is over the image
+    disablewheel: false
+  });
+});
+
+$(window).on('load', function () {
+  $('#loading').hide();
+})
+
+function changeImg() {
+  var image = document.getElementById('myImg');
+  if (image.src.match("img/ad2.gif")) {
+    image.src = "img/ad1.gif";
+  }
+  else {
+    image.src = "img/ad2.gif";
+  }
+}
+
+$(document).ready(function () {
+  $(".musicOff").click(function () {
+    var image = document.getElementById('myImg');
+    var x = document.getElementById("audioFile");
+    x.play();
+    if (image.src.match("img/ad1.gif")) {
+      image.src = "img/ad2.gif";
+    }
+    else {
+      image.src = "img/ad1.gif";
+      x.pause();
+    }
+  });
+});
+
+var playlist = Array("audio/ELEVATION.aac", "audio/FadedPhotograph.aac", "audio/TRISING!.aac");
+var randomSong = playlist[Math.floor(Math.random() * playlist.length)];
+var audioElement = document.getElementById('audioFile');
+audioElement.setAttribute('src', randomSong);
