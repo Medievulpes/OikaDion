@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
 /*
 
 Vanilla Template
@@ -16,14 +18,19 @@ section {
   background: #fff;
 }
 
-body { 
-  position: relative; /* we need this for the scrollspy */ 
+body {
+  position: relative;
+  /* we need this for the scrollspy */
   font-size: 14px;
 }
 
-body::after{
-  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-  content:url(../img/1st-section-mono.jpg) url(../img/1st-section.jpg) url(../img/A6.png) url(../img/B6.png);
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(../img/1st-section-mono.jpg) url(../img/1st-section.jpg) url(../img/A6.png) url(../img/B6.png);
 }
 
 /*----------
@@ -41,10 +48,12 @@ body::after{
   -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 .fixed-side-navbar:hover {
   background: transparent;
 }
-.fixed-side-navbar:hover .nav > li > a > span {
+
+.fixed-side-navbar:hover .nav>li>a>span {
   color: rgba(0, 0, 0, 0.5);
   display: block;
   background-color: #fff;
@@ -54,15 +63,18 @@ body::after{
   padding: 2px 12px;
   border-radius: 15px;
 }
-.fixed-side-navbar .nav > li a.active {
+
+.fixed-side-navbar .nav>li a.active {
   background-color: transparent;
   color: black;
 }
-.fixed-side-navbar .nav > li a.active:after {
+
+.fixed-side-navbar .nav>li a.active:after {
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
-.fixed-side-navbar .nav > li a.active:before {
+
+.fixed-side-navbar .nav>li a.active:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -74,23 +86,27 @@ body::after{
   border: 2px solid #fff;
   border-radius: 10px;
 }
+
 .nav>li {
   position: relative;
   display: block;
 }
-.fixed-side-navbar .nav > li a {
+
+.fixed-side-navbar .nav>li a {
   color: #fff;
   min-height: 32px;
   background: transparent;
   padding: 5px 45px 5px 25px;
   border-right: none;
 }
-.fixed-side-navbar .nav > li a span {
+
+.fixed-side-navbar .nav>li a span {
   display: none;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
-.fixed-side-navbar .nav > li a:after {
+
+.fixed-side-navbar .nav>li a:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -103,23 +119,25 @@ body::after{
   -webkit-transition: all .3s;
   transition: all .3s;
   -webkit-transform: scale(0.6);
-          transform: scale(0.6);
+  transform: scale(0.6);
 }
-.fixed-side-navbar .nav > li a:hover {
+
+.fixed-side-navbar .nav>li a:hover {
   background-color: transparent;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-color: black;
   border-right: 0;
 }
-.fixed-side-navbar .nav > li a:hover > span {
+
+.fixed-side-navbar .nav>li a:hover>span {
   color: black;
   display: block;
 }
 
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight;
+  animation-name: fadeInRight;
 }
 
 .player {
@@ -132,7 +150,7 @@ body::after{
   z-index: 99999;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .player {
     width: 70%;
     left: 15%;
@@ -156,7 +174,7 @@ body::after{
   transition: 0.5s;
 }
 
-.primary-button a:hover{
+.primary-button a:hover {
   opacity: 100%;
 }
 
@@ -172,7 +190,7 @@ body::after{
   background-repeat: no-repeat;
   background-image: url(../img/1st-section-mono.jpg);
   transition: background-image 0.5s ease-in-out;
-  }
+}
 
 .baner-content:hover {
   background-repeat: no-repeat;
@@ -192,7 +210,7 @@ body::after{
 
 .baner-content span {
   display: inline-block;
-  font-family:'Century Gothic';
+  font-family: 'Century Gothic';
   margin-top: 20px;
   font-weight: 300;
   font-size: 48px;
@@ -207,84 +225,111 @@ body::after{
     color: #cc2525;
   }
 }
+
 .baner-content span:nth-child(2) {
   animation-delay: 0.1s;
 }
+
 .baner-content span:nth-child(3) {
   animation-delay: 0.2s;
 }
+
 .baner-content span:nth-child(4) {
   animation-delay: 0.3s;
 }
+
 .baner-content span:nth-child(5) {
   animation-delay: 0.4s;
 }
+
 .baner-content span:nth-child(6) {
   animation-delay: 0.5s;
 }
+
 .baner-content span:nth-child(7) {
   animation-delay: 0.6s;
 }
+
 .baner-content span:nth-child(8) {
   animation-delay: 0.7s;
 }
+
 .baner-content span:nth-child(9) {
   animation-delay: 0.8s;
 }
+
 .baner-content span:nth-child(10) {
   animation-delay: 0.9s;
 }
+
 .baner-content span:nth-child(11) {
   animation-delay: 1s;
 }
+
 .baner-content span:nth-child(12) {
   animation-delay: 1.1s;
 }
+
 .baner-content span:nth-child(13) {
   animation-delay: 1.2s;
 }
+
 .baner-content span:nth-child(14) {
   animation-delay: 1.3s;
 }
+
 .baner-content span:nth-child(15) {
   animation-delay: 1.4s;
 }
+
 .baner-content span:nth-child(16) {
   animation-delay: 1.5s;
 }
+
 .baner-content span:nth-child(17) {
   animation-delay: 1.6s;
 }
+
 .baner-content span:nth-child(18) {
   animation-delay: 1.7s;
 }
+
 .baner-content span:nth-child(19) {
   animation-delay: 1.8s;
 }
+
 .baner-content span:nth-child(20) {
   animation-delay: 1.9s;
 }
+
 .baner-content span:nth-child(21) {
   animation-delay: 2s;
 }
+
 .baner-content span:nth-child(22) {
   animation-delay: 2.1s;
 }
+
 .baner-content span:nth-child(23) {
   animation-delay: 2.2s;
 }
+
 .baner-content span:nth-child(24) {
   animation-delay: 2.3s;
 }
+
 .baner-content span:nth-child(25) {
   animation-delay: 2.4s;
 }
+
 .baner-content span:nth-child(26) {
   animation-delay: 2.5s;
 }
+
 .baner-content span:nth-child(27) {
   animation-delay: 2.6s;
 }
+
 .baner-content span:nth-child(28) {
   animation-delay: 2.7s;
 }
@@ -309,7 +354,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
-  background-image: url(../img/3rd-section.jpg);
+  background-image: url(../img/2nd-section.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -320,7 +365,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10vh;
-  background-image: url(../img/4th-section.jpg);
+  background-image: url(../img/3rd-section.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -334,12 +379,13 @@ section {
 }
 
 @keyframes slide-in-anim {
-	0% {
-		transform: translateY(10vh);
+  0% {
+    transform: translateY(10vh);
   }
-	100% {
-		transform: translateY(0);
-	}  
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .about-content .right-text h4 {
@@ -376,7 +422,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5vh;
-  background-image: url(../img/5th-section.jpg);
+  background-image: url(../img/4th-section.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -399,21 +445,21 @@ section {
   margin: 10px;
 }
 
-@media (max-width: 767px){
-  .tabs li{
+@media (max-width: 767px) {
+  .tabs li {
     margin: 1px;
   }
 }
 
 .tabs a {
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  text-transform:uppercase;
-  color:#fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
   font-size: 14px;
-  padding:10px 15px;
-  border:1px solid #fff;
+  padding: 10px 15px;
+  border: 1px solid #fff;
   min-width: 150px;
 }
 
@@ -423,13 +469,13 @@ section {
 }
 
 .tabs .active {
-  border:3px solid #ffe3b8;
+  border: 3px solid #ffe3b8;
 }
 
 .clearfix:after {
-  content:"";
-  display:table;
-  clear:both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 HTML CSS JSResult Skip Results Iframe
@@ -443,13 +489,6 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 
 */
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
-
-:root {
-  /* Base font size */
-  font-size: 10px;
-}
-
 *,
 *::before,
 *::after {
@@ -459,12 +498,114 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 .album-content {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 15vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   background-image: url(../img/6th-section.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
   background-position: center center;
+}
+
+.albumcontainer {
+  height: 45%;
+  width: 85%;
+  top: 60px;
+  margin: 5%;
+  left: 10%;
+  display: flex;
+}
+
+.wardrobe {
+  display: flex;
+  height: 303px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  border: white solid 2px;
+  filter: blur(1.5px);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.20);
+}
+
+.wardrobe:not(:first-child) {
+  margin-left: -100px;
+}
+
+.wardrobe:nth-last-child(1) {
+  filter: blur(0px);
+}
+
+.wardrobe:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+  filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.wardrobe:hover~.wardrobe {
+  position: relative;
+  left: 105px;
+  transition: 0.4s ease-out;
+}
+
+.wardrobe:hover~.wardrobe:nth-last-child(1) {
+  filter: blur(1.5px);
+}
+
+.wardrobetitle {
+  color: rgb(45, 6, 6);
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#alb1 .wardrobe:nth-child(1) {
+  background-image: url("../img/wardrobe_1.png");
+}
+
+#alb1 .wardrobe:nth-child(2) {
+  background-image: url("../img/wardrobe_2.png");
+}
+
+#alb1 .wardrobe:nth-child(3) {
+  background-image: url("../img/wardrobe_3.png");
+}
+
+#alb1 .wardrobe:nth-child(4) {
+  background-image: url("../img/wardrobe_4.png");
+}
+
+#alb1 .wardrobe:nth-child(5) {
+  background-image: url("../img/wardrobe_5.png");
+}
+
+#alb1 .wardrobe:nth-child(6) {
+  background-image: url("../img/wardrobe_6.png");
+}
+
+#alb1 .wardrobe:nth-child(7) {
+  background-image: url("../img/wardrobe_7.png");
+}
+
+#alb1 .wardrobe:nth-child(8) {
+  background-image: url("../img/wardrobe_8.png");
+}
+
+#alb2 .wardrobe:nth-child(1) {
+  background-image: url("");
+}
+
+#alb2 .wardrobe:nth-child(2) {
+  background-image: url("");
 }
 
 .info-item {
@@ -481,11 +622,6 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 400ms ease-out;
-}
-
-.info-image:hover {
-  transform: scale(1.15);
 }
 
 .owl-pagination {
@@ -524,11 +660,12 @@ footer .primary-button {
   display: inline-block;
   overflow: hidden;
 }
+
 footer .primary-button h2 {
-    margin: auto;
-    font-size: 2.5rem;
-    font-weight: 300;
-    animation: lights 5s 750ms linear infinite;
+  margin: auto;
+  font-size: 2.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
 }
 
 @keyframes lights {
@@ -540,8 +677,8 @@ footer .primary-button h2 {
       -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
       1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
   }
-  
-  30% { 
+
+  30% {
     color: hsl(230, 80%, 90%);
     text-shadow:
       0 0 1em hsla(320, 100%, 50%, 0.5),
@@ -549,8 +686,8 @@ footer .primary-button h2 {
       -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
       0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
   }
-  
-  40% { 
+
+  40% {
     color: hsl(230, 100%, 95%);
     text-shadow:
       0 0 1em hsla(320, 100%, 50%, 0.5),
@@ -558,7 +695,7 @@ footer .primary-button h2 {
       -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
       0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
   }
-  
+
   70% {
     color: hsl(230, 80%, 90%);
     text-shadow:
@@ -567,7 +704,7 @@ footer .primary-button h2 {
       0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
       -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
   }
-  
+
   100% {
     color: hsl(230, 40%, 80%);
     text-shadow:
@@ -576,7 +713,7 @@ footer .primary-button h2 {
       1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
       -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
   }
-  
+
 }
 
 footer ul {
@@ -612,8 +749,8 @@ footer em {
   font-style: normal;
 }
 
-@media (max-width: 767px){
-  
+@media (max-width: 767px) {
+
   .baner-content {
     padding-top: 30vh;
     background-position-x: 81%;
@@ -738,7 +875,7 @@ body.lb-disable-scrolling {
   z-index: 10;
 }
 
-.lb-container > .nav {
+.lb-container>.nav {
   left: 0;
 }
 
@@ -747,7 +884,8 @@ body.lb-disable-scrolling {
   background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
 }
 
-.lb-prev, .lb-next {
+.lb-prev,
+.lb-next {
   height: 100%;
   cursor: pointer;
   display: block;
