@@ -144,11 +144,6 @@ body {
   display: block;
 }
 
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-}
-
 .player {
   width: 300px;
   filter: drop-shadow(2px 7px 4px rgb(0, 0, 0));
